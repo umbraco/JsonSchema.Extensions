@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B996AD24-A58F-4294-B319-856CE8F10528}"
+	ProjectSection(SolutionItems) = preProject
+		.artifactignore = .artifactignore
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.globalconfig = .globalconfig
+		azure-pipelines.yml = azure-pipelines.yml
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		icon.png = icon.png
+		LICENSE.md = LICENSE.md
+		nuget.config = nuget.config
+		README.md = README.md
+		version.json = version.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.JsonSchema.Extensions", "src\Umbraco.JsonSchema.Extensions\Umbraco.JsonSchema.Extensions.csproj", "{50FCB7F0-EDB4-4429-B99F-5B5719ECA551}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A92FC2B0-97A4-4D1C-B6F9-3D33390BD32E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.JsonSchema.Extensions.UnitTests", "tests\Umbraco.JsonSchema.Extensions.UnitTests\Umbraco.JsonSchema.Extensions.UnitTests.csproj", "{07C8F8AB-51BA-44FA-819F-47928F608DAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50FCB7F0-EDB4-4429-B99F-5B5719ECA551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50FCB7F0-EDB4-4429-B99F-5B5719ECA551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50FCB7F0-EDB4-4429-B99F-5B5719ECA551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50FCB7F0-EDB4-4429-B99F-5B5719ECA551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07C8F8AB-51BA-44FA-819F-47928F608DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C8F8AB-51BA-44FA-819F-47928F608DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C8F8AB-51BA-44FA-819F-47928F608DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C8F8AB-51BA-44FA-819F-47928F608DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{07C8F8AB-51BA-44FA-819F-47928F608DAE} = {A92FC2B0-97A4-4D1C-B6F9-3D33390BD32E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {717CD4B8-9BD8-4633-A2AA-F4459E18BB90}
+	EndGlobalSection
+EndGlobal
