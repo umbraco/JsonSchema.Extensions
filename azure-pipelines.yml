@@ -4,7 +4,7 @@ parameters:
   - name: cache_nuget
     displayName: Cache NuGet packages
     type: boolean
-    default: false
+    default: true
 
 variables:
   solution: Umbraco.JsonSchema.Extensions.sln
