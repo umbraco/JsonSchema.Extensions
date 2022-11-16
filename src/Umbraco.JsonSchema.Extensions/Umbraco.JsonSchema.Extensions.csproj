@@ -1,6 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>Umbraco JSON schema extensions</Title>
+    <Description>Allows adding one or more references to a JSON schema using an MSBuild task.</Description>
     <Nullable>disable</Nullable>
     <EnablePackageValidation>false</EnablePackageValidation>
   </PropertyGroup>
