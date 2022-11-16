@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace Umbraco.JsonSchema.Extensions
         /// The JSON schema file.
         /// </value>
         [Required]
-        public string JsonSchemaFile { get; set; }
+        public string JsonSchemaFile { get; set; } = null!;
 
         /// <summary>
         /// Gets or sets the references to add.
@@ -29,7 +30,7 @@ namespace Umbraco.JsonSchema.Extensions
         /// The references to add.
         /// </value>
         [Required]
-        public ITaskItem[] References { get; set; }
+        public ITaskItem[] References { get; set; } = Array.Empty<ITaskItem>();
 
         /// <inheritdoc />
         public override bool Execute()
