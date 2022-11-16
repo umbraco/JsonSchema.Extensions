@@ -3,7 +3,6 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Umbraco JSON schema extensions</Title>
     <Description>Allows adding one or more references to a JSON schema using an MSBuild task.</Description>
-    <EnablePackageValidation>false</EnablePackageValidation>
   </PropertyGroup>
   
   <ItemGroup>
