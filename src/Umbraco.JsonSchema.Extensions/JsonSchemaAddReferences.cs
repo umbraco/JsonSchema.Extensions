@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -89,10 +90,12 @@ namespace Umbraco.JsonSchema.Extensions
             {
                 {
                     "allOf",
-                    new JArray(references.Select(x => new JObject()
-                    {
-                        { "$ref", x.ItemSpec }
-                    }))
+                    new JArray(references
+                        .OrderBy(x => int.TryParse(x.GetMetadata("Weight"), NumberStyles.Integer, CultureInfo.InvariantCulture, out var order) ? order : 0)
+                        .Select(x => new JObject()
+                        {
+                            { "$ref", x.ItemSpec }
+                        }))
                 }
             };
     }
