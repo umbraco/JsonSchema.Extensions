@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="JsonPathUpdateValue" AssemblyFile="$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\Umbraco.JsonSchema.Extensions.dll" />
   <UsingTask TaskName="JsonSchemaAddReferences" AssemblyFile="$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\Umbraco.JsonSchema.Extensions.dll" />
 </Project>
